@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@600&family=Raleway:wght@800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="ListaPacientes.css">
+    <script src="https://kit.fontawesome.com/1fde30a71e.js" crossorigin="anonymous"></script>
+    <title>WebPage</title>
+</head>
+
+<body style="background-image: url('Fondoapp2.jfif');">
+    <nav id="#mainNavbar" class="navbar navbar-light navbar-expand-md py-0 top-fixed mn">
+        <div class="navbar-brand"><img
+                src="https://midulcecompania.s01.eixel.com/ext/resources/img/logo.png?t=1632742394" alt="logo"
+                style="width: 200px;"></div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navLinks">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item mx-auto">
+                    <a href="" class="nav-link elink"><i class="fa-solid fa-clipboard-list fa-lg"
+                            id="patients"></i>&nbsp;Pacientes</a>
+                </li>
+                <li class="nav-item mx-auto">
+                    <a href="file:///C:/Users/admin/Downloads/HTML/Login.html?login=&login=" class="nav-link elink"><i
+                            class="fa-solid fa-power-off fa-lg" id="off"></i>&nbsp;Cerrar
+                        Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid row row-cols-1 row-cols-md-3 mx-auto">
+        <div class="col mb-4">
+            <a href="file:///C:/Users/admin/Downloads/HTML/Project.html"
+                class="card border-light mb-3 mx-auto text-dark" style="max-width: 20rem; text-decoration:none;">
+                <div class="card-body">
+                    <h5 class="card-text"><i class="fa-regular fa-circle-user" id="user"></i>&nbsp;&nbsp;Pablo
+                        Percovich&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                            class="fa-regular fa-circle-check fa-lg" id="check"></i>
+                    </h5>
+                </div>
+                <div class="card-footer small d-block"><i class="fa-solid fa-heart-pulse"
+                        id="pulse"></i>&nbsp;96ppm&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-gauge-high"
+                        id="press"></i>&nbsp;105/70 mmHg&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-lungs"
+                        id="breath"></i>&nbsp;15&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-temperature-half"
+                        id="temp"></i>&nbsp;37ºC
+                </div>
+            </a>
+        </div>
+        <div class="col mb-4">
+            <a href="file:///C:/Users/admin/Downloads/HTML/Project.html"
+                class="card border-light mb-3 mx-auto text-dark" style="max-width: 20rem; text-decoration:none;">
+                <div class="card-body">
+                    <h5 class="card-text"><i class="fa-regular fa-circle-user" id="user"></i>&nbsp;&nbsp;Agustín
+                        Percovich&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                            class="fa-solid fa-triangle-exclamation fa-lg" id="warn"></i>
+                    </h5>
+                </div>
+                <div class="card-footer small d-block"><i class="fa-solid fa-heart-pulse"
+                        id="pulse"></i>&nbsp;96ppm&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-gauge-high"
+                        id="press"></i>&nbsp;105/70 mmHg&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-lungs"
+                        id="breath"></i>&nbsp;15&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-temperature-half"
+                        id="temp"></i>&nbsp;37ºC
+                </div>
+            </a>
+        </div>
+        <div class="col mb-4">
+            <a href="file:///C:/Users/admin/Downloads/HTML/Project.html"
+                class="card border-light mb-3 mx-auto text-dark" style="max-width: 20rem; text-decoration:none;">
+                <div class="card-body">
+                    <h5 class="card-text"><i class="fa-regular fa-circle-user" id="user"></i>&nbsp;&nbsp;Nicolas
+                        Percovich&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i
+                            class="fa-solid fa-circle-exclamation fa-lg" id="alarm"></i>
+                    </h5>
+                </div>
+                <div class="card-footer small d-block"><i class="fa-solid fa-heart-pulse"
+                        id="pulse"></i>&nbsp;96ppm&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-gauge-high"
+                        id="press"></i>&nbsp;105/70 mmHg&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-lungs"
+                        id="breath"></i>&nbsp;15&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-temperature-half"
+                        id="temp"></i>&nbsp;37ºC
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
